@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {# #}
+        <link rel="stylesheet" href="{{asset('ressources/build/main.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('ressources/css/style.scss')}}">
+
+       
+    </head>
+    <body>
+        {% include("includeAdmin/headerAdmin.html.twig") %}
+       
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
+        {% include("includeAdmin/footerAdmin.html.twig") %}
+    
+        <script src="{{ asset("ressources/build/runtime.js") }}"></script>
+        <script src="{{ asset("ressources/build/main.min.js") }}"></script>
+      
+    </body>

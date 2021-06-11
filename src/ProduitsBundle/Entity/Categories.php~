@@ -1,0 +1,115 @@
+<?php
+
+namespace ProduitsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
+/**
+ * Categories
+ *
+ * @ORM\Table(name="categories")
+ * @ORM\Entity
+ */
+class Categories
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=50, nullable=false)
+     */
+    private $nom;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+    
+    /**
+     *
+     *  @ORM\OneToMany(targetEntity="Produits", mappedBy="categorie")
+     */
+    private $produits;
+    
+    
+    public function __construct()
+    {
+        $this->produits = new ArrayCollection();
+    }
+
+
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Categories
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+    
+    
+
+    /**
+     * Add produit
+     *
+     * @param \ProduitsBundle\Entity\Produits $produit
+     *
+     * @return Categories
+     */
+    public function addProduit(\ProduitsBundle\Entity\Produits $produit)
+    {
+        $this->produits[] = $produit;
+
+        return $this;
+    }
+
+    /**
+     * Remove produit
+     *
+     * @param \ProduitsBundle\Entity\Produits $produit
+     */
+    public function removeProduit(\ProduitsBundle\Entity\Produits $produit)
+    {
+        $this->produits->removeElement($produit);
+    }
+
+    /**
+     * Get produits
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getProduits()
+    {
+        return $this->produits;
+    }
+}

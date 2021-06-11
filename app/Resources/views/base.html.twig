@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <title>{% block title %}ArabCom TECHNOLOGIE D'ENSEIGEMENT{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{  asset("ressources/images/ArabCom/logo.jpg") }}" />
+        {# #}
+        <link rel="stylesheet" href="{{asset('ressources/build/main.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('ressources/css/style.scss')}}">
+
+       
+    </head>
+    <body>
+        {% include("include/header.html.twig") %}
+        
+    
+        {% include("include/navbarPub.html.twig") %}
+       
+        <div class="container-fluid mt-2">
+            <div class="row">
+                {% block body %} {% endblock %}
+            </div>
+        </div>
+        {% include("include/footer.html.twig") %}
+    
+        <script src="{{ asset("ressources/build/runtime.js") }}"></script>
+        <script src="{{ asset("ressources/build/main.min.js") }}"></script>
+        
+        
+        
+        <script src=" {{ asset("https://code.jquery.com/jquery-3.2.1.slim.min.js") }}"> </script>
+        <script src="{{asset("https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js") }}"> </script>
+    <script src="{{ asset("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js") }} "></script>
+    
+      
+    </body>
+</html>

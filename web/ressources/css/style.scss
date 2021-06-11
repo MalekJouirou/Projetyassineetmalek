@@ -1,0 +1,552 @@
+@import "~bootstrap/scss/bootstrap";
+
+ body {
+  
+     padding-top: 6%;
+}
+.image-liste{
+    height: 300px;
+}
+.rating a {
+   color: #fed720;
+   text-decoration: none;
+   font-size: 3em;
+   transition: color .4s;
+}
+.rating a:hover,
+.rating a:focus {
+   color: orange;
+   cursor: pointer;
+}
+
+/*sm*/
+@media (min-width: 576px) and (min-width: 768px) {
+    body {
+        padding-top: 15%;
+    }
+   
+}
+/*md*/
+
+
+/*xs*/
+@media (min-width: 320px){
+    body {
+        padding-top: 13%;
+    }
+   
+}
+/*md lg*/
+@media (min-width: 768px) and (max-width: 991px) {
+ body {
+        padding-top: 14%;
+    }
+   
+}
+/*lg*/
+@media (min-width: 991px) and (max-width: 1400px) {
+ body {
+        padding-top: 8%;
+    }
+   
+}
+
+
+/*----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------*/
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.pubBar{
+    padding-top: 7px;
+}
+.pubBar p{
+    font-size: 15px;
+}
+
+/*#sticker{
+ margin-top: 4%;
+}*/
+/*********************************************************************/
+/* ---------------------------------------------------
+    MEDIAQUERIES
+Carrousels des catégories dans la page d'accueil (index))'
+----------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    // Show 4th slide on md if col-md-4
+       .multi-item-carousel .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -33.3333%; // change this with javascript in the future
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+      
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    // Show 3rd slide on sm if col-sm-6   
+       .multi-item-carousel .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -50%; // change this with javascript in the future
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+  
+}
+@media (min-width: 576px) {
+  
+        .multi-item-carousel .carousel-item {
+            margin-right: 0;
+        }
+        // show 2 items 
+        .multi-item-carousel .carousel-inner .active + .carousel-item {
+            display: block;
+        }
+        .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+            transition: none;
+        }
+        .multi-item-carousel .carousel-inner .carousel-item-next {
+            position: relative;
+            transform: translate3d(0, 0, 0);
+        }
+        // left or forward direction 
+        .multi-item-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+        .carousel-item-next.carousel-item-left + .carousel-item,
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+        // farthest right hidden item must be also positioned for animations 
+        .multi-item-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+        // right or prev direction 
+        .multi-item-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+        .carousel-item-prev.carousel-item-right + .carousel-item,
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+     
+}
+
+// MD
+@media (min-width: 768px) {
+    // show 3rd of 3 item slide    
+        .multi-item-carousel .carousel-inner .active + .carousel-item + .carousel-item {
+            display: block;
+        }
+        .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+            transition: none;
+        }
+        .multi-item-carousel .carousel-inner .carousel-item-next {
+            position: relative;
+            transform: translate3d(0, 0, 0);
+        }
+        // left or forward direction 
+        .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+        // right or prev direction 
+        .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+   
+}
+
+// LG
+@media (min-width: 991px) {
+    // show 4th item   
+        .multi-item-carousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+            display: block;
+        }
+        .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+            transition: none;
+        }
+        // Show 5th slide on lg if col-lg-3 
+        .multi-item-carousel .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -25%; // change this with javascript in the future
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+        // left or forward direction 
+        .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+         //right or prev direction //t - previous slide direction last item animation fix 
+        .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+     
+}
+/****login****/
+/* Coded with love by Mutiullah Samim */
+
+html {
+    height: 100%;
+}
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: 9%;
+    margin-bottom: 9%;
+    background: #f39c12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.form_container {
+    margin-top: 100px;
+}
+.login_btn {
+    width: 100%;
+    background: #c0392b !important;
+    color: white !important;
+}
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: #c0392b !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #c0392b !important;
+}
+
+
+
+   /***commande***/
+   .commande_card {
+background: #97c3d3;
+   }
+   /****slidePlusUtilisee****/
+   .card-carousel-utlise{
+        background: #bc6075;
+   }
+   /*******livraison*****/
+   #card_livraison, #card-panier ,#back-nav{
+    background: #eaf3f6;
+
+}
+   
+   
+   /** premier solution pour Zoomer les image **/
+/*
+.inner{
+    overflow: hidden;
+   
+}
+.inner img{
+    transition: all 1.5s ease;
+     z-index: 2;
+}
+.inner:hover img{
+    transform: scale(5);
+} */
+
+/****sticky****/
+
+.sticky {
+    position: fixed;
+    top: 1;
+  }
+  
+  /** Zoomer une image **/
+  /*.inner{
+      overflow: hidden;
+  }
+  .inner img{
+      transition: all 1.5s ease;
+          z-index: 2;
+  
+  }
+  .inner:hover img{
+      transform: scale(3);
+  }*/
+  
+  /***image principale**/
+  
+  .inner2{
+      overflow: hidden;
+  }
+  .inner2 img{
+      transition: all 1.5s ease;
+          z-index: 2;
+  
+  }
+  .inner2:hover img{
+      transform: scale(2);
+  }
+  /*--------------------------------------------
+  card des information
+  ---------------------------------------------*/
+  .card-details{
+      background:   #e6faff;
+  }
+  
+  /**images**/
+  .img-produit{
+      width: 200px;
+      height: 200px;
+  }
+  .carousel-item img {
+    width:300px;
+    height:300px;
+  }
+  /*image de carousel top */
+  .card_top img {
+    width:100%;
+    height:50%;
+  }
+  /*.card-titre{
+      font-size: medium;
+  }*/
+  
+  /**card produit page index*/
+  .card_produit{
+     background: #318fb5;
+     width:250px;
+     height:550px;
+  }
+  /*card-page-produit*/
+  .card_prod_bg{
+     background: mistyrose;
+  }
+  /**zoom grande image**/
+  .zoom img:hover {
+      width:300px;
+      height:400px;
+  }
+  /*description de site **/
+  .description{
+      text-transform: text-uppercase;
+      font-weight: bold;
+  }
+  .procedure_achat{
+      font-size: 19px;
+  }
+
+ /** deuxieme solution pour Zoomer les image **/
+ 
+.inner{
+    width: 300px;
+    height: 350px;
+    margin: 0 20px;
+    transition: 1s;
+}
+.inner img{
+    width: 100%;
+    height: 100%;
+    opacity: .25;
+    transition: .9s;
+}
+.inner:hover img{
+    transform: scale(3);
+    z-index: 2;
+    box-shadow: 0px 2px 10px #1184ce;
+    opacity: 1;
+} 
+/****** end de la solution de zommer les petites images ***/
+
+/*zommer le grand image*/
+/*.inner2{
+    width: 300px;
+    height: 350px;
+    margin: 0 20px;
+    transition: 1s;
+}
+*/
+/**** end ****/
+
+/*titre categorie carousel **/
+.pink-lighter-hover {
+    color: #092532;
+    -webkit-transition: .4s;
+    transition: .4s; 
+    font-family: Apple Chancery, cursive;
+    font-weight: bold;}
+  .pink-lighter-hover:hover {
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: #f386aa; }
+  /*style prix page index**/
+  .card-text{
+    color: #411f1f;
+    -webkit-transition: .4s;
+    transition: .4s; 
+    font-size: 100%;
+    font-weight: bold;}
+  .card-text:hover {
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: #616161;
+  }
+
+  .card-categorie{
+    color: #f55b5b;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+  }
+
+  .stock{
+    font-size: 120%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  /*.style-categorie-text h6{
+      font-family: tLuminari, fantasy;
+      font-weight: bold;
+      color: blueviolet;
+  }*/
+  /** text carousel title produit (.indigo-lighter-hover)**/
+  .card-title{
+    color: #222831;
+    -webkit-transition: .4s;
+    transition: .4s; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+  }
+  .body-width{
+    width: 150%;
+}
+  .espace-titre{
+     width:200px;
+     height:80px;
+  }
+  .card-title:hover {
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: #d3dbff; }
+  a {
+  text-decoration:none;
+  }
+  /*bouton*/
+  .caree-btn{
+    width: 100%;
+    text-transform: capitalize;
+  }
+  /**@media screen and (min-width:768px) {
+    .carre-bouton{
+      width: 50%;
+    }**/
+  .nav-header{
+    background-color:  #00bcd4;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+      height: 70px;
+      width: 70px;
+      outline: black;
+      background-color: hsl(0, 0%, 5%);
+      background-size: 70%, 70%;
+      border-radius: 50%;
+      border: 1px solid black;
+  }
+  .card-back-carousel{
+      background: #99ddff;
+  
+  }
+  .prix, .avis{
+    font-family: Apple Chancery, cursive;
+    font-weight: bold;
+    color: hsla(200, 88%, 10%, 0.3);
+  }
+  .q{
+    font-family: Apple Chancery, cursive;
+    font-weight: bold;
+  }
+  .page-footer{
+      background: #3f4441;
+  }
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

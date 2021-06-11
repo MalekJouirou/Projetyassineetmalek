@@ -1,0 +1,48 @@
+user_user:
+    resource: "@UserUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+admin_accuiel:
+    resource: "@AdminAccuielBundle/Resources/config/routing.yml"
+    prefix:   /
+
+client_produits:
+    resource: "@ClientProduitsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utilisateurs:
+    resource: "@UtilisateursBundle/Resources/config/routing.yml"
+    prefix:   /
+
+accueil_admin:
+    resource: "@AccueilAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin/
+
+produits:
+    resource: "@ProduitsBundle/Resources/config/routing.yml"
+    prefix:   /user/
+
+home:
+    resource: "@HomeBundle/Resources/config/routing.yml"
+    prefix:   /   
+
+routingProduitsAdmin:
+    resource: "@ProduitsBundle/Resources/config/routing/routingproduitsAdmin.yml"
+    prefix: /admin/produits
+
+routingCategoriesAdmin:
+    resource: "@ProduitsBundle/Resources/config/routing/routingcategoriesAdmin.yml"
+    prefix: /admin/categories
+
+routingCommandesAdmin:
+    resource: "@ProduitsBundle/Resources/config/routing/routingcommandesAdmin.yml"
+    prefix: /admin/commades
+
+routingUtilisateursAdmin:
+    resource: "@UserUserBundle/Resources/config/routing/routingUtilisateursAdmin.yml"
+    prefix:   /Admin/Utilisateurs
+
+
+
+    
+

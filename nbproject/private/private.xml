@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/navbar.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/composer.json</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/navbarLeftProfile.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/Client/ProduitsBundle/ClientProduitsBundle.php</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/web/ressources/js/main.js</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/config/routing.yml</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/navbarLeftCategoryHR.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/config/routing.yml</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/HomeBundle/Resources/views/Default/heritage.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/navbarCommande.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/navbarUser.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/profileCommandeVide.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Entity/Produits.php</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/livraisonAdresse.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/profileFavoriesVide.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/profileEdit.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/livraisonMode.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Entity/Categories.php</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/footer.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/baseAdmin.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/AccueilAdminBundle/Resources/config/routing.yml</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/presentation.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/HomeBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/login.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Entity/Images.php</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/webpack.config.js</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/package.json</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/AccueilAdminBundle/Resources/views/Accueil/index.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/HomeBundle/HomeBundle.php</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/produit.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/base.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/header.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/index.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/config/parameters.yml</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/navbarPub.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/navbarLeftAccueilHr.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/views/produits/profileCreditVide.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Resources/config/services.yml</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/app/Resources/views/include/carouselProduitPlusUtilise.html.twig</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/web/ressources/css/style.scss</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/ProduitsBundle/Controller/ProduitsController.php</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/HomeBundle/Resources/config/routing.yml</file>
+            <file>file:/D:/wamp64/www/ecommerce-symfony34/src/Client/ProduitsBundle/Controller/ProduitsController.php</file>
+        </group>
+    </open-files>
+</project-private>
